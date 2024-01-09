@@ -22,17 +22,17 @@
         color: $title;
         padding-bottom: 1px;
         transition: all .3s;
-        @extend %roboto-400;
+        @extend %quicksand-400;
         &:hover {
             color: $accent;
             border-bottom: 1px solid $accent;
-            @extend %roboto-700;
+            @extend %quicksand-500;
         }
     } 
     &__list-link--active {
         color: $accent;
         border-bottom: 1px solid $accent;
-        @extend %roboto-700;
+        @extend %quicksand-500;
     }
 }
 .user-nav {
