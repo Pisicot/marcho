@@ -20,19 +20,19 @@
     }
     &__list-link {
         color: $title;
-        padding-bottom: 1px;
+        padding: 0 3px 1px;
         transition: all .3s;
-        @extend %quicksand-400;
+        @extend %roboto-400;
         &:hover {
             color: $accent;
             border-bottom: 1px solid $accent;
-            @extend %quicksand-500;
+            text-shadow: .6px 0px 0px $accent, -.6px 0px 0px $accent;
         }
     } 
     &__list-link--active {
         color: $accent;
         border-bottom: 1px solid $accent;
-        @extend %quicksand-500;
+        text-shadow: .6px 0px 0px $accent, -.6px 0px 0px $accent;
     }
 }
 .user-nav {
