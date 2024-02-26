@@ -378,17 +378,28 @@
 
 .product {
     padding: 105px 0 120px;
+    text-align: center;
     &__items {
-
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px 30px;
+    }
+    &__link {
+        color: $title;
+        display: inline-block;
+        border: 1px solid $accent;
+        padding: 14px 27px;
+        text-transform: uppercase;
+        margin-top: 55px;
     }
 }
 .product-item {
     max-width: 370px;
-    text-align: center;
     &__img-box {
         position: relative;
         height: 370px;
         overflow: hidden;
+        margin-bottom: 25px;
     }
     &__link-box {
         position: absolute;
@@ -442,6 +453,37 @@
             transform: translateY(0);
         }
     }
+    &__title {
+        color: $title;
+        padding: 15px 20px;
+    }
+    &__price {
+        display: flex;
+        justify-content: center;
+        @extend %roboto-500;
+    }
+    &__new-price {
+        padding: 0 12px;
+        color: $title;
+    }
+    &__old-price {
+        padding: 0 12px;
+        text-decoration: line-through;
+        @extend %roboto-400;
+    }
+    &--sale {
+        .product-item__img-box::before {
+            content: "SALE";
+            @extend %btn;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            line-height: 1;
+            z-index: 1;
+            padding: 5px 9px;
+        }
+    }
+    
 }
 
 
