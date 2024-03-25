@@ -697,6 +697,34 @@
         display: inline-block;
     }
 }
+
+.page-404 {
+    padding: 110px 0 120px; 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        max-width: 570px;
+        width: 100%;
+    }
+    &__title {
+        color: #28384f;
+        text-transform: none;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    &__text {
+        text-align: left;
+        max-width: 470px;   
+        margin-left: 0;  
+    }
+    &__link {
+        @extend %btn;
+        padding: 14px 35px;
+    }
+}
   
   
 
